@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+}
+
+.bg {
+    background-image: url('../assets/background.svg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+/* Navbar Section */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.navbar .logo img {
+    width: 120px;
+}
+
+.navbar .list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.btn-free{
+    color: #FFFFFF;
+    background-color: #5ba0e0;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.hero .hero-left h1{
+    color: #ffffff;
+    font-size: 3.4rem;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.hero .hero-left p{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.btn-try{
+    color: #FFFFFF;
+    background-color: #5ba0e0;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.hero .hero-right {
+    margin-top: -80px;
+}
+
+.hero .hero-right img {
+    width: 600px;
+}
+
+/* Service Section */
+
+.service-section {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 90px;
+}
+
+.service-section .service-left img{
+    width: 500px;
+}
+
+.service-section .service-right h4{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.service-section .service-right .list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.service-section .service-right .list .list-item h6{
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+}
+
+.service-section .service-right .list .list-item p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* Feature Section */
+
+.feature-section{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.feature-section h2{
+    margin-bottom: 30px;
+}
+
+.feature-cards {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.feature-cards .card .img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(245,56,6, .2);
+    margin: 40px auto 30px auto;
+    border-radius: 500px;
+}
+
+.feature-section .feature-cards .img.data {
+    background-color: rgba(255, 193, 58, 0.2);
+}
+.feature-section .feature-cards .img.profile {
+    background-color: rgba(101, 255, 58, 0.2);
+}
+.feature-section .feature-cards .img.profile img {
+    width: 60px;
+}
+.feature-section.feature-cards .img.support {
+    background-color: rgba(235, 58, 255, 0.2);
+}
+
+.feature-section .feature-cards .img.support {
+   width: 50px; 
+}
+
+.feature-section .feature-cards .img.dev img {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.feature-section .feature-cards .card {
+    max-width: 13rem;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 260px;
+}
+
+
+
+.feature-section .feature-cards .card:first-child .card-info
+{
+    background-color: #542795;
+    color: #fff;
+}
+
+.feature-section .feature-cards  .card .info {
+    border-radius: 10px;
+    height: 100%;
+    padding: 4px 10px;
+}
+.feature-section .feature-cards  .card .info h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+.feature-section .feature-cards  .card .info p {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.feature-section .feature-cards .card img{
+    margin-left: 25px;
+}
