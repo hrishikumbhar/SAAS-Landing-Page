@@ -16,7 +16,7 @@
 
 ### This project took around 2 hours to complete.
 
-### Project Link : [Link](https://business-landing-page-dashboard.netlify.app/)
+### Project Link : [Link](https://saas-landing-dashboard.netlify.app/)
 
 ### Screenshot
 
