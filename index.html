@@ -32,6 +32,33 @@
                     <button class="btn-free">Free Trial</button>
                 </li>
             </ul>
+            <div class="hamburger">
+                <svg viewBox="0 0 100 80" width="30" height="30">
+                    <rect fill="#FFFFFF" width="100" height="10"></rect>
+                    <rect
+                        fill="#FFFFFF"
+                        y="30"
+                        width="100"
+                        height="10"
+                    ></rect>
+                    <rect
+                        fill="#FFFFFF"
+                        y="60"
+                        width="100"
+                        height="10"
+                    ></rect>
+                </svg>
+            </div>
+            <ul class="mobile-list">
+                <li class="list-item">Home</li>
+                <li class="list-item">Services</li>
+                <li class="list-item">Pricing</li>
+                <li class="list-item">Testimonials</li>
+                <li class="list-item">Blog</li>
+                <li class="list-item">
+                    <button class="btn-free">Free Trial</button>
+                </li>
+            </ul>
         </nav>
         <!-- Hero Section  -->
         <section class="hero">
@@ -142,5 +169,12 @@
         </section>
 
     </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const mobileNavBar = document.querySelector(".mobile-list");
+        hamburger.addEventListener("click", () => {
+            mobileNavBar.classList.toggle("show-navbar");
+        });
+    </script>
 </body>
 </html>

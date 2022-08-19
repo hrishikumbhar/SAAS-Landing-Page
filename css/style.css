@@ -55,6 +55,48 @@ body{
     font-weight: lighter;
 }
 
+.navbar .hamburger {
+    display: none;
+}
+.navbar .mobile-list {
+    display: none;
+}
+
+@media only screen and (max-width: 774px) {
+    .show-navbar {
+        display: flex !important;
+    }
+    .navbar .hamburger {
+        display:block;
+        cursor: pointer;
+    }
+    .navbar .list {
+        display: none;
+    }
+    .navbar {
+        position: relative;
+        padding: 0 20px;
+        height: 14vh;
+    }
+    .navbar .mobile-list {
+        align-items: center;
+        width: 100%;
+        background-color: #542795;
+        gap: 20px;
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        color: #FFFFFF;
+        padding: 20px 0px;
+        position: absolute;
+        top: 80px;       
+        left: 0;
+        right: 0; 
+        border-radius: 10px;
+        
+    }
+}
+
 /* Hero Section */
 
 .hero {
@@ -97,6 +139,44 @@ body{
     width: 600px;
 }
 
+@media only screen and (max-width: 1110px) {
+    .hero .hero-left h1 {
+        font-size: 2.4rem;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .hero .hero-left button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .hero .hero-right img {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .hero .hero-right {
+        opacity: .2;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .hero {
+        justify-content: center;
+        margin-top: 120px;
+    }
+    .hero .hero-left  {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero .hero-left  {
+        padding: 0 20px;
+    }
+}
+
 /* Service Section */
 
 .service-section {
@@ -130,6 +210,25 @@ body{
 .service-section .service-right .list .list-item p{
     font-size: 15px;
     padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 916px) {
+    .service-section {
+        gap: 20px;
+        justify-content: center;
+    }
+    .service-section .service-left img {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .service-section {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .service-section .service-left img {
+        width: 400px;
+    }
 }
 
 /* Feature Section */
@@ -217,4 +316,10 @@ body{
 
 .feature-section .feature-cards .card img{
     margin-left: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+    .feature-section .feature-cards {
+        flex-wrap: wrap;
+    }
 }
